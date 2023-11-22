@@ -22,7 +22,7 @@ namespace UnitTests
             Assert.IsType<OkObjectResult>(res);
         }
         [Fact]
-        public void DeleteById_ReturnOk()
+        public void DeleteById_ReturnNotFound()
         {
             //Arange
             int id = 8;
