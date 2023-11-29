@@ -31,3 +31,4 @@ C:\Users\user1\Desktop\הנדסת תוכנה\שנה ב\.net Core\MyFirstApi\MyFi
 C:\Users\user1\Desktop\הנדסת תוכנה\שנה ב\.net Core\MyFirstApi\MyFirstApi\obj\Debug\net7.0\MyFirstApi.pdb
 C:\Users\user1\Desktop\הנדסת תוכנה\שנה ב\.net Core\MyFirstApi\MyFirstApi\obj\Debug\net7.0\MyFirstApi.genruntimeconfig.cache
 C:\Users\user1\Desktop\הנדסת תוכנה\שנה ב\.net Core\MyFirstApi\MyFirstApi\obj\Debug\net7.0\ref\MyFirstApi.dll
+C:\Users\user1\Desktop\הנדסת תוכנה\שנה ב\.net Core\MyFirstApi\MyFirstApi\bin\Debug\net7.0\CsvHelper.dll

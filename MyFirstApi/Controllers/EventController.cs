@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MyFirstApi;
 
 namespace MyFirstApi.Controllers
 {
@@ -8,18 +7,22 @@ namespace MyFirstApi.Controllers
     [ApiController]
     public class EventController : ControllerBase
     {
-        static DataContext context = new DataContext();
+        private readonly IDataContext _context;
 
+        public EventController(IDataContext context)
+        {
+            _context = context;
+        }
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(context.EventsList);
+            return Ok(_context.EventList);
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var eve= context.EventsList.Find(x => x.Id == id);
+            var eve= _context.EventList.Find(x => x.Id == id);
 
             if(eve is null)
                 return NotFound();
@@ -31,14 +34,14 @@ namespace MyFirstApi.Controllers
         
         public void Post([FromBody] Event eve)
         {
-            context.EventsList.Add(eve);
+            _context.EventList.Add(eve);
         }
 
         // PUT api/<EventController>/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Event eve)
         {
-            var e = context.EventsList.Find(x => x.Id == id);
+            var e = _context.EventList.Find(x => x.Id == id);
             if(e is  null)
                 return NotFound();
                     e.Title = eve.Title;
@@ -51,11 +54,11 @@ namespace MyFirstApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var e = context.EventsList.Find(x => x.Id == id);
+            var e = _context.EventList.Find(x => x.Id == id);
             if (e is null)
                 return NotFound();
-            
-            context.EventsList.Remove(e);
+
+            _context.EventList.Remove(e);
             return Ok() ;
         }
     }

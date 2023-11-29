@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "92g5S3NhwUjthXJUw0a4PHOiLaUa1Bp0/nfnq13pCfvO7ca8lSq8EwvtTpABBXqr8O6O2fCu6noguUnhQj717A==",
+  "dgSpecHash": "RLhlXgF+/6LbMmb0zi3vxNL7KydLgGki4c29r2p5lHPXu52wttE9I6WqguffCGXKFo7k10ce4f12PmLUa4q9kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user1\\Desktop\\הנדסת תוכנה\\שנה ב\\.net Core\\MyFirstApi\\MyFirstApi\\MyFirstApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user1\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
